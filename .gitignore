@@ -1,0 +1,8 @@
+*.a
+*.o
+my_radar
+*.log
+*.gcda
+*.gcno
+.vscode/*
+generator/*

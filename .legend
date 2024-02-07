@@ -1,0 +1,7 @@
+One space between each parameter and a \n between 2 object
+
+Planes :
+A [x] [y] [x_end] [y_end] [speed] [delay]   
+
+Tower :
+T [x] [y] [radius]
