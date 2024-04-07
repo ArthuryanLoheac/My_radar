@@ -1,31 +1,72 @@
-# My_radar
+# My Radar - Air Traffic Control Simulation
 
-Compiler :  
-> make
+"My Radar" is a graphical program developed in C, designed to simulate and visualize air traffic including aircraft and control towers. This project is part of the B-MUL-100 module, focusing on C graphical programming with the CSFML library.
 
-2 types d'entités :  
-- les avions,  
-- les tours de contrôle.
+## Features
 
-Les règles de base de my_radar sont les suivantes :  
-- les avions volent d'un endroit donné à un autre.  
-- les avions apparaissent sur le panneau de simulation lorsqu'ils décollent.  
-- les avions disparaissent du panneau de simulation lorsqu'ils atterrissent.  
-- les avions se déplacent en ligne droite à des vitesses constantes données.  
-- Les avions qui entrent en collision avec un autre sont détruits et disparaissent du panneau de simulation.  
-- Les zones de contrôle permettent aux avions d'entrer en collision les uns avec les autres sans être détruits et de poursuivre leur route.  
-- les tours de contrôle ne se déplacent pas et ont des zones de contrôle sur la carte.  
-- les tours de contrôle apparaissent sur le panneau de simulation lors du lancement.
+- **Simulation of Air Traffic:** Displays moving aircraft and stationary control towers on a 2D panel.
+- **Collision Handling:** Aircraft collide and are destroyed unless within a control tower's area.
+- **Control Areas:** Defined by control towers, these areas prevent aircraft collisions.
+- **Flexible Scripting:** Entities and their behaviors are defined in an external script, allowing for dynamic simulations.
 
-pour changer la visibilité des hitboxes et des zones appuyez sur la touche 'L'.  
-pour changer la visibilité des sprites des entités appuyez sur la touche 'S'.  
+### Command-line Options
 
-Lancer programme :
-> ./my_radar fichier_de_données
+- **-h:** Displays usage information.
 
-Fichier :  
-> Un espace entre chaque paramètre et un espace entre 2 objets  
-> Avions :  
-> A [x] [y] [x_fin] [y_fin] [vitesse] [delay]     
-> Tour :  
-> T [x] [y] [rayon]  
+### User Interactions
+
+- **'L' Key:** Toggles the visibility of hitboxes and control areas.
+- **'S' Key:** Toggles the visibility of entity sprites.
+
+## Getting Started
+
+### Prerequisites
+
+- Linux or macOS operating system
+- GCC compiler
+- CSFML library
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/my_radar.git
+   ```
+2. Navigate to the project directory:
+```bash
+cd my_radar
+   ```
+3. Compile with Makefile:
+```bash
+make
+   ```
+## Usage
+Run the program with a script file as an argument:
+
+```bash
+./my_radar path_to_script
+   ```
+For help and options:
+
+```bash
+./my_radar -h
+   ```
+## Script File Format
+The simulation script defines aircraft and control towers with the following format:
+
+Aircraft (A): A [departure x] [departure y] [arrival x] [arrival y] [speed] [takeoff delay]
+Control Tower (T): T [x coordinate] [y coordinate] [control radius]
+Entities should be separated by a newline, with attributes separated by tabs or spaces.
+
+Example script content:
+
+```css
+A 815 321 1484 166 5 0
+A 1589 836 811 936 2 0
+A 202 894 103 34 3 0
+T 93 47 19
+T 49 56 25
+   ```  
+
+## Authorized Functions
+This project is limited to specific functions from the C Standard Library, CSFML library, and math library. Unspecified functions are not allowed.  
