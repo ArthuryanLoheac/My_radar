@@ -39,23 +39,17 @@ This project is part of the **B-MUL-100** module, focusing on graphical programm
 1️⃣ **Clone the repository**:  
 ```bash
 git clone https://github.com/ArthuryanLoheac/My_radar.git
-```  
-⬇️ **Click to copy**:
-<button onclick="navigator.clipboard.writeText('git clone https://github.com/ArthuryanLoheac/My_radar.git')">Copy</button>  
+```    
 
 2️⃣ **Navigate to the project directory**:  
 ```bash
 cd my_radar
 ```  
-⬇️ **Click to copy**:
-<button onclick="navigator.clipboard.writeText('cd my_radar')">Copy</button>  
 
 3️⃣ **Compile with Makefile**:  
 ```bash
 make
 ```  
-⬇️ **Click to copy**:
-<button onclick="navigator.clipboard.writeText('make')">Copy</button>  
 
 ---
 
@@ -65,15 +59,11 @@ make
 ```bash
 ./my_radar path_to_script
 ```  
-⬇️ **Click to copy**:
-<button onclick="navigator.clipboard.writeText('./my_radar path_to_script')">Copy</button>  
 
 🆘 Display help:  
 ```bash
 ./my_radar -h
 ```  
-⬇️ **Click to copy**:
-<button onclick="navigator.clipboard.writeText('./my_radar -h')">Copy</button>  
 
 ---
 
